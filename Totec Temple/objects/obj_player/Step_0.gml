@@ -39,9 +39,9 @@ if climbing {
 	//If not climbing, can move side to side and gravity will gravity
 if global.canMove{
 	if (!place_meeting(x, y+1, obj_ground)) {
-	    gravity = .25
+		gravity = grav_val
 	} else {
-	    gravity = 0
+		gravity = 0
 	}
 	
 	if (keyboard_check(vk_left) and !instance_place(x-move_speed, y, obj_ground)){
@@ -65,8 +65,16 @@ if global.canMove{
 if keyboard_check_pressed(vk_up) {
 	if instance_place(x, y+1, obj_ground){
 		vspeed = jump_height
+		
 	}
 }
 
+if keyboard_check_pressed(ord("K")) {
+	hp -= 10
+}
+
+if hp <= 0{
+	instance_destroy()	
+}
 
 //vspeed = min(vspeed, 12)
