@@ -1,22 +1,72 @@
-//vspeed += 
-vspeed += .1
-if global.canMove {
-	if keyboard_check(vk_left) x -= 4
-	if keyboard_check(vk_right) x += 4
-	//if keyboard_check(vk_space) vspeed -= 3 
-	
-}
-if not keyboard_check(vk_left) and not keyboard_check(vk_right){
-	hspeed = 0
+
+//detectomg climbing
+/**
+if (instance_place(x, y, obj_ladder)) {
+	if keyboard_check(vk_up) or keyboard_check(vk_down){
+		climbing = true
+		vspeed = 0
+		gravity = 0
+		sprite_index = spr_climbing
+	}	
+} 
+else {
+	sprite_index = spr_player
+	climbing = false
 }
 
-if place_meeting(x, y+1, obj_ground){
-	vspeed = 0
+
+
+//if climbing climbing stuff will happend
+if climbing {
+	if keyboard_check(vk_up){
+		y -= climb_speed
+		
+		vspeed = 0
+		gravity = 0
+	}
+	if keyboard_check(vk_down){
+		y += climb_speed
+		vspeed = 0
+		gravity = 0
+		
+	}
+	if instance_place(x, y, obj_ground){ 
+		climbing = false
+	}	
+}
+**/
 	
-	if keyboard_check(vk_space) {
-		vspeed -= 5 
+	//If not climbing, can move side to side and gravity will gravity
+if !global.canMove{
+	if (!place_meeting(x, y+1, obj_ground)) {
+	    gravity = .25
+	} else {
+	    gravity = 0
 	}
 	
+	if (keyboard_check(vk_left) and !instance_place(x-move_speed, y, obj_ground)){
+		x -= move_speed
+		image_xscale = -1
+	}
+
+	if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, obj_ground)) {
+		x += move_speed
+		image_xscale = 1
+	}
+	
+	/**
+	if keyboard_check_pressed(ord("Z")){
+		instance_create_layer(x,y, "Instances", obj_sword)
+	}
+	**/
+	
 }
 
-move_and_collide(hspeed, vspeed, obj_ground)
+if keyboard_check_pressed(vk_up) {
+	if instance_place(x, y+1, obj_ground){
+		vspeed = jump_height
+	}
+}
+
+
+//vspeed = min(vspeed, 12)
