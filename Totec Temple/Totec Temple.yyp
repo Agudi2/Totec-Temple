@@ -34,10 +34,12 @@
   },
   "name":"Totec Temple",
   "resources":[
+    {"id":{"name":"obj_death","path":"objects/obj_death/obj_death.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_death","path":"sprites/spr_death/spr_death.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_playerPlaceholder","path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},},
   ],
