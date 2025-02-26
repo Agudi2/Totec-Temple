@@ -37,7 +37,7 @@ if climbing {
 **/
 	
 	//If not climbing, can move side to side and gravity will gravity
-if !global.canMove{
+if global.canMove{
 	if (!place_meeting(x, y+1, obj_ground)) {
 	    gravity = .25
 	} else {
