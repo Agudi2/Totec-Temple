@@ -1,4 +1,10 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_nextlvl","order":1,"path":"objects/obj_nextlvl/obj_nextlvl.yy",},
+    {"name":"spr_floor","order":2,"path":"sprites/spr_floor/spr_floor.yy",},
+    {"name":"spr_nextlvl","order":4,"path":"sprites/spr_nextlvl/spr_nextlvl.yy",},
+    {"name":"spr_playerPlaceholder","order":3,"path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},
+    {"name":"spr_tile_set","order":1,"path":"sprites/spr_tile_set/spr_tile_set.yy",},
+  ],
 }
