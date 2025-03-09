@@ -45,15 +45,17 @@ if global.canMove{
 	}
 	
 	if (keyboard_check(vk_left) and !instance_place(x-move_speed, y, obj_ground)){
+		sprite_index = spr_player_side
 		x -= move_speed
-		image_xscale = -1
-	}
+		image_xscale = -2
+	} 
 
 	if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, obj_ground)) {
+		sprite_index = spr_player_side
 		x += move_speed
-		image_xscale = 1
+		image_xscale = 2
 	}
-	
+
 	/**
 	if keyboard_check_pressed(ord("Z")){
 		instance_create_layer(x,y, "Instances", obj_sword)
