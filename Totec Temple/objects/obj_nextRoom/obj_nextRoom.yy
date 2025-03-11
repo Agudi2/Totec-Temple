@@ -27,10 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+  "spriteId":{
+    "name":"spr_door",
+    "path":"sprites/spr_door/spr_door.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }

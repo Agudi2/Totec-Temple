@@ -1,8 +1,40 @@
+//detectomg climbing
+if (instance_place(x, y, obj_ladder)) {
+	if keyboard_check(vk_up) or keyboard_check(vk_down){
+		climbing = true
+		vspeed = 0
+		gravity = 0
+		//sprite_index = spr_climbing
+	}	
+} 
+else {
+	//sprite_index = spr_player
+	climbing = false
+}
 
 
-	
+
+//if climbing climbing stuff will happend
+if climbing {
+	if keyboard_check(vk_up){
+		y -= climb_speed
+		
+		vspeed = 0
+		gravity = 0
+	}
+	if keyboard_check(vk_down){
+		y += climb_speed
+		vspeed = 0
+		gravity = 0
+		
+	}
+	if instance_place(x, y, obj_ground){ 
+		climbing = false
+	}	
+}
+
 	//If not climbing, can move side to side and gravity will gravity
-if global.canMove{
+else if global.canMove{
 	if (!place_meeting(x, y+1, obj_ground) and climbing != true) {
 		gravity = grav_val
 	} else {
@@ -37,6 +69,17 @@ if global.canMove{
 	if (place_meeting(x, y + 1, obj_moving_platform)) {
 		vspeed = instance_place(x, y + 1, obj_ground).vspeed
 		hspeed = instance_place(x, y + 1, obj_ground).hspeed
+	} else {
+		hspeed = 0
+	}
+	if keyboard_check_pressed(vk_up) {
+		if instance_place(x, y+1, obj_ground){
+			vspeed = jump_height
+		}
+	}
+	if (vspeed > 0 && place_meeting(x, y+vspeed, obj_moving_platform)) {
+		move_contact_solid(270, vspeed)
+		vspeed = 0
 	}
 	/**
 	if keyboard_check_pressed(ord("Z")){
@@ -44,47 +87,4 @@ if global.canMove{
 	}
 	**/
 	
-}
-
-if keyboard_check_pressed(vk_up) {
-	if instance_place(x, y+1, obj_ground){
-		vspeed = jump_height
-		
-	}
-}
-
-//detectomg climbing
-
-if (instance_place(x, y, obj_ladder)) {
-	if keyboard_check(vk_up) or keyboard_check(vk_down){
-		climbing = true
-		vspeed = 0
-		gravity = 0
-		//sprite_index = spr_climbing
-	}	
-} 
-else {
-	//sprite_index = spr_player
-	climbing = false
-}
-
-
-
-//if climbing climbing stuff will happend
-if climbing {
-	if keyboard_check(vk_up){
-		y -= climb_speed
-		
-		vspeed = 0
-		gravity = 0
-	}
-	if keyboard_check(vk_down){
-		y += climb_speed
-		vspeed = 0
-		gravity = 0
-		
-	}
-	if instance_place(x, y, obj_ground){ 
-		climbing = false
-	}	
 }
