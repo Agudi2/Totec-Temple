@@ -34,6 +34,8 @@
   },
   "name":"Totec Temple",
   "resources":[
+    {"id":{"name":"obj_arrow_trap","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},},
+    {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
     {"id":{"name":"obj_death","path":"objects/obj_death/obj_death.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
