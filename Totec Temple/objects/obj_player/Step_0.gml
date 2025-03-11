@@ -50,10 +50,13 @@ if global.canMove{
 		image_xscale = -2
 	} 
 
-	if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, obj_ground)) {
+	else if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, obj_ground)) {
 		sprite_index = spr_player_side
 		x += move_speed
 		image_xscale = 2
+	}
+	else {
+		sprite_index = spr_idle
 	}
 
 	/**
