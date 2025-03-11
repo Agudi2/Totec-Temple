@@ -1,1 +1,1 @@
-room_restart()
+instance_create_layer(x, y-7, "Instances", player_death)

@@ -78,8 +78,8 @@
     {"name":"inst_36256BFD","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_BE5785","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_FD6555C","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_74861F6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2C467AB1","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_74861F6","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
