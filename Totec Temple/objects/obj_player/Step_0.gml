@@ -72,7 +72,7 @@ else if global.canMove{
 	} else {
 		hspeed = 0
 	}
-	if keyboard_check_pressed(vk_up) {
+	if keyboard_check(vk_up) {
 		if instance_place(x, y+1, obj_ground){
 			vspeed = jump_height
 		}
