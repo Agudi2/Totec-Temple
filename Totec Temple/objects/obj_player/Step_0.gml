@@ -45,20 +45,34 @@ if global.canMove{
 	}
 	
 	if (keyboard_check(vk_left) and !instance_place(x-move_speed, y, obj_ground)){
-		sprite_index = spr_player_side
+		if (!place_meeting(x, y + 1, obj_ground)) {
+			sprite_index = spr_player_fall
+		} else {
+			sprite_index = spr_player_side
+		}
 		x -= move_speed
 		image_xscale = -2
 	} 
 
 	else if (keyboard_check(vk_right) and !instance_place(x+move_speed, y, obj_ground)) {
-		sprite_index = spr_player_side
+		if (!place_meeting(x, y + 1, obj_ground)) {
+			sprite_index = spr_player_fall
+		} else {
+			sprite_index = spr_player_side
+		}
 		x += move_speed
 		image_xscale = 2
+	}
+	else if (!place_meeting(x, y + 1, obj_ground)) {
+		sprite_index = spr_player_fall
 	}
 	else {
 		sprite_index = spr_idle
 	}
-
+	if (place_meeting(x, y + 1, obj_moving_platform)) {
+		vspeed = instance_place(x, y + 1, obj_ground).vspeed
+		hspeed = instance_place(x, y + 1, obj_ground).hspeed
+	}
 	/**
 	if keyboard_check_pressed(ord("Z")){
 		instance_create_layer(x,y, "Instances", obj_sword)
