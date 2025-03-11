@@ -4,3 +4,5 @@ global.canMove = true
 //ysp = 0
 hp = 100
 jump_height = -14
+climbing = false
+climb_speed = 4

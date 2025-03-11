@@ -1,44 +1,9 @@
 
-//detectomg climbing
-/**
-if (instance_place(x, y, obj_ladder)) {
-	if keyboard_check(vk_up) or keyboard_check(vk_down){
-		climbing = true
-		vspeed = 0
-		gravity = 0
-		sprite_index = spr_climbing
-	}	
-} 
-else {
-	sprite_index = spr_player
-	climbing = false
-}
 
-
-
-//if climbing climbing stuff will happend
-if climbing {
-	if keyboard_check(vk_up){
-		y -= climb_speed
-		
-		vspeed = 0
-		gravity = 0
-	}
-	if keyboard_check(vk_down){
-		y += climb_speed
-		vspeed = 0
-		gravity = 0
-		
-	}
-	if instance_place(x, y, obj_ground){ 
-		climbing = false
-	}	
-}
-**/
 	
 	//If not climbing, can move side to side and gravity will gravity
 if global.canMove{
-	if (!place_meeting(x, y+1, obj_ground)) {
+	if (!place_meeting(x, y+1, obj_ground) and climbing != true) {
 		gravity = grav_val
 	} else {
 		gravity = 0
@@ -65,11 +30,48 @@ if global.canMove{
 }
 
 if keyboard_check_pressed(vk_up) {
-	if instance_place(x, y+1, obj_ground){
+	if instance_place(x, y+1, obj_ground) or instance_place(x, y, obj_ladder){
 		vspeed = jump_height
 		
 	}
 }
+
+//detectomg climbing
+
+if (instance_place(x, y, obj_ladder)) {
+	if keyboard_check(vk_up) or keyboard_check(vk_down){
+		climbing = true
+		vspeed = 0
+		gravity = 0
+		//sprite_index = spr_climbing
+	}	
+} 
+else {
+	//sprite_index = spr_player
+	climbing = false
+}
+
+
+
+//if climbing climbing stuff will happend
+if climbing {
+	if keyboard_check(vk_up){
+		y -= climb_speed
+		
+		vspeed = 0
+		gravity = 0
+	}
+	if keyboard_check(vk_down){
+		y += climb_speed
+		vspeed = 0
+		gravity = 0
+		
+	}
+	if instance_place(x, y, obj_ground){ 
+		climbing = false
+	}	
+}
+
 
 if keyboard_check_pressed(ord("K")) {
 	hp -= 10
