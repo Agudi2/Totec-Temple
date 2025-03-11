@@ -1,1 +1,3 @@
-room_goto_next()
+if (keyboard_check_pressed(ord("E"))){
+	room_goto_next()
+}

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_nextRoom",
+  "%Name":"obj_marker",
   "eventList":[],
   "managed":true,
-  "name":"obj_nextRoom",
+  "name":"obj_marker",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+  "spriteId":{
+    "name":"spr_marker",
+    "path":"sprites/spr_marker/spr_marker.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }
