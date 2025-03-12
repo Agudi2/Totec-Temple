@@ -1,2 +1,2 @@
-global.respawn_room = Room1
+global.respawn_room = room
 global.items = 0
