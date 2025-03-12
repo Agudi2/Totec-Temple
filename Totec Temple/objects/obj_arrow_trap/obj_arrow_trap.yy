@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_death",
-    "path":"sprites/spr_death/spr_death.yy",
+    "name":"spr_arrowTrap",
+    "path":"sprites/spr_arrowTrap/spr_arrowTrap.yy",
   },
   "spriteMaskId":null,
   "visible":true,
