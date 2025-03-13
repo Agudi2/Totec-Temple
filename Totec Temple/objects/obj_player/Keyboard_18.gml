@@ -8,3 +8,6 @@ if (keyboard_check_pressed(ord("I"))) {
 	inst.mask_index = self.mask_index
 	instance_destroy(self, false)
 }
+if (keyboard_check_pressed(ord("E"))) {
+	room_restart()
+}

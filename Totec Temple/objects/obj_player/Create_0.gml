@@ -7,3 +7,4 @@ jump_height = -14
 has_key = false
 climbing = false
 climb_speed = 4
+death_animation = 0
