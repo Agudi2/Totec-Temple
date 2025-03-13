@@ -1,0 +1,1 @@
+instance_create_layer(x, y, "ground_layer", obj_lever_pulled)

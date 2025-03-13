@@ -17,16 +17,20 @@ else {
 //if climbing climbing stuff will happend
 if climbing {
 	if keyboard_check(vk_up){
+		sprite_index = spr_playerClimb
 		y -= climb_speed
 		
 		vspeed = 0
 		gravity = 0
 	}
-	if keyboard_check(vk_down){
+	else if keyboard_check(vk_down){
+		sprite_index = spr_playerClimb
 		y += climb_speed
 		vspeed = 0
 		gravity = 0
 		
+	} else {
+		sprite_index = spr_playerClimbIdle
 	}
 	if instance_place(x, y, obj_ground){ 
 		climbing = false
@@ -72,7 +76,7 @@ else if global.canMove{
 	} else {
 		hspeed = 0
 	}
-	if keyboard_check_pressed(vk_up) {
+	if keyboard_check(vk_up) {
 		if instance_place(x, y+1, obj_ground){
 			vspeed = jump_height
 		}

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_door",
-    "path":"sprites/spr_door/spr_door.yy",
+    "name":"spr_roomChange",
+    "path":"sprites/spr_roomChange/spr_roomChange.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -35,10 +35,10 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+    "name":"spr_movingPlatform",
+    "path":"sprites/spr_movingPlatform/spr_movingPlatform.yy",
   },
   "spriteMaskId":null,
   "visible":true,
