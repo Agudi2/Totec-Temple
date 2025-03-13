@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_secret",
+  "%Name":"obj_lever",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_secret",
+  "name":"obj_lever",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,10 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"spr_key",
-    "path":"sprites/spr_key/spr_key.yy",
+  "spriteId":{
+    "name":"spr_lever",
+    "path":"sprites/spr_lever/spr_lever.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }
