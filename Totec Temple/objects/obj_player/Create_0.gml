@@ -8,3 +8,4 @@ has_key = false
 climbing = false
 climb_speed = 4
 death_animation = 0
+has_item = false

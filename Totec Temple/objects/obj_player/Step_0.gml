@@ -17,6 +17,9 @@ else {
 //if climbing climbing stuff will happend
 if climbing {
 	if keyboard_check(vk_up){
+		if(!audio_is_playing(Climb)) {
+			audio_play_sound(Climb, 1, false)
+		}
 		sprite_index = spr_playerClimb
 		y -= climb_speed
 		
@@ -24,15 +27,24 @@ if climbing {
 		gravity = 0
 	}
 	else if keyboard_check(vk_down){
+		if(!audio_is_playing(Climb)) {
+			audio_play_sound(Climb, 1, false)
+		}
 		sprite_index = spr_playerClimb
 		y += climb_speed
 		vspeed = 0
 		gravity = 0
 		
 	} else {
+		if(audio_is_playing(Climb)) {
+			audio_stop_sound(Climb)
+		}
 		sprite_index = spr_playerClimbIdle
 	}
 	if instance_place(x, y, obj_ground){ 
+		if(audio_is_playing(Climb)) {
+			audio_stop_sound(Climb)
+		}
 		climbing = false
 	}	
 }
@@ -40,6 +52,9 @@ if climbing {
 	//If not climbing, can move side to side and gravity will gravity
 else if global.canMove{
 	if (!place_meeting(x, y+1, obj_ground) and climbing != true) {
+		if(audio_is_playing(Climb)) {
+			audio_stop_sound(Climb)
+		}
 		gravity = grav_val
 	} else {
 		gravity = 0
@@ -78,6 +93,7 @@ else if global.canMove{
 	}
 	if keyboard_check(vk_up) {
 		if instance_place(x, y+1, obj_ground){
+			audio_play_sound(Jump, 1, false)
 			vspeed = jump_height
 		}
 	}
