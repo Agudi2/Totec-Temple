@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_39F98CD4","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_6F045951","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_74861F6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_213B87D6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3E087F0C","path":"rooms/Room1/Room1.yy",},
@@ -66,7 +65,6 @@
     {"name":"inst_4988B850","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_654EA02B","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_33CD3586","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_20974DF1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7A8D0D33","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_685AE375","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_103B6CFC","path":"rooms/Room1/Room1.yy",},
@@ -75,15 +73,14 @@
     {"name":"inst_320B8524","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_72980A89","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_1CF9A61A","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_74861F6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4C3AE1F7","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_D23A333","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_16A7B67A","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_74861F6","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_6F045951","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F045951","objectId":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_3964A82B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3964A82B","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"dropped_obj","path":"objects/obj_enemy/obj_enemy.yy",},"resource":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_key",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5333333,"scaleY":1.5333333,"x":304.0,"y":603.0,},
@@ -350,7 +347,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arrow_trap","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"propertyId":{"name":"facing_right","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arrow_trap","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"propertyId":{"name":"fire_rate","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2976.0,"y":704.0,},
-        {"$GMRInstance":"v1","%Name":"inst_20974DF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20974DF1","objectId":{"name":"global_setup","path":"objects/global_setup/global_setup.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_7A8D0D33","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A8D0D33","objectId":{"name":"obj_arrow_trap","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_arrow_trap","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"propertyId":{"name":"fire_rate","path":"objects/obj_arrow_trap/obj_arrow_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":2432.0,"y":608.0,},
