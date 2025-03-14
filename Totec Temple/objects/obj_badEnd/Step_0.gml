@@ -1,4 +1,2 @@
-if global.levers != 5{
-	y+=2
+y+=2
 	
-}
