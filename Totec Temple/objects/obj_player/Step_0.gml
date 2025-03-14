@@ -108,3 +108,14 @@ else if global.canMove{
 	**/
 	
 }
+	if keyboard_check_pressed(ord("g")){
+		god = true
+	}
+
+	if keyboard_check_pressed(ord("k")){	
+		has_key = true
+	}
+
+	if keyboard_check_pressed(ord("i")){	
+		has_item = true
+	}

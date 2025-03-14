@@ -1,1 +1,3 @@
-instance_destroy()
+if (!god){
+	instance_destroy()
+}

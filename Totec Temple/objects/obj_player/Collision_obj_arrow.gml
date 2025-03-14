@@ -1,2 +1,4 @@
-instance_destroy()
+if (!god){
+	instance_destroy()
+}
 instance_destroy(other)
