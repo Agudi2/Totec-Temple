@@ -1,0 +1,1 @@
+audio_play_sound(Arrow, 1, false)
