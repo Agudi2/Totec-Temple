@@ -7,4 +7,4 @@ jump_height = -14
 climbing = false
 climb_speed = 4
 death_animation = 0
-global.levers = 0
+global.levers = 5
