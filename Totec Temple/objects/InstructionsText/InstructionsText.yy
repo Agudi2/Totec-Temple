@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Title",
+  "%Name":"InstructionsText",
   "eventList":[],
   "managed":true,
-  "name":"Title",
+  "name":"InstructionsText",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"TitleText",
-    "path":"sprites/TitleText/TitleText.yy",
+    "name":"Sprite38",
+    "path":"sprites/Sprite38/Sprite38.yy",
   },
   "spriteMaskId":null,
   "visible":true,
